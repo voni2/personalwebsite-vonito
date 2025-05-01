@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import Header from './Header'
 import './App.css'
+import Footer from './Footer'
 
 function App() {
  
 
   return (
     <>
-    <Header></Header>
-
+       <Header/>
+ 
+ 
+  
     <div className = "Menu">
         <button> Continue </button>
         <button> Character </button>
@@ -17,7 +20,7 @@ function App() {
     </div>
 
     
-
+    <Footer/>
  
     </>
   )

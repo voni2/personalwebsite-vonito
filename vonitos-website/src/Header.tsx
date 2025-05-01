@@ -1,7 +1,7 @@
 function Header(){
     return(
         <header>
-            <h1>WELCOME TRAVELLERS, COME JOIN ME!</h1>
+            <p>WELCOME TRAVELLERS, COME JOIN ME!</p>
         </header>
     )
 }
