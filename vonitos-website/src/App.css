@@ -23,19 +23,14 @@
 tr { display: block; float: left; }
 th, td { display: block; }
 
-.Menu{
-  display: grid;
-  padding: 1.5em;
-  place-items: center;
-  
-  
-}
+
+
 
 
 
 .Menu button{
   width: 20em;
-  height:5.5em;
+  height: 5em;
   margin: 1.5em;
 
 }
@@ -43,16 +38,50 @@ th, td { display: block; }
 .Menu img{
   width: 6em;
   height: 7em;
-  margin: 10px;
+  margin: 5px;
   visibility: hidden;
   animation:both;
   animation: SelectorAnimation .5s infinite alternate;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* left | middle (menu) | right */
+  align-items: center; /* vertically align */
+  text-align: center;
+  gap: 20px; /* spacing between columns */
+  margin-top: 2rem;
+}
+
+.column {
+
+}
 
 
+.Text-Right{ 
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.Text-Left{ 
+  background-color: white;
+   width: 100%;
+  height: 100%;
+}
 
 
+.Menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between rows */
+}
+
+.menu-row {
+  display: flex;
+  align-items: center; /* vertical align center */
+  gap: 10px; /* space between img and button */
+}
 
 
 
@@ -107,4 +136,12 @@ Footer{
     width: 100%;
   }
   
- 
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+
+    #root{
+      width: 100%;
+    }
+  }

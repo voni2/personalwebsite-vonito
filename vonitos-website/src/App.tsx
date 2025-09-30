@@ -49,35 +49,69 @@ function App() {
   return (
     <>
        <Header/>
+
+    <div className="row">
+    
+    <div className = "Text-Left"> 
+      <div className='column'>
+       <h1>Left Text</h1>
+    </div>
+    </div>
  
+    <div className='column'>
+      <div className="Menu">
+            <div className="menu-row">
+              <img src={Selector} style={{ visibility: SelectorVisibility1 }} />
+              <button 
+                onMouseEnter={handleMouseEnterS1} 
+                onMouseLeave={handleMouseLeaveS1}
+              >
+                Continue
+              </button>
+            </div>
+
+            <div className="menu-row">
+              <img src={Selector} style={{ visibility: SelectorVisibility2 }} />
+              <button 
+                onMouseEnter={handleMouseEnterS2} 
+                onMouseLeave={handleMouseLeaveS2}
+              >
+                Character
+              </button>
+            </div>
+
+            <div className="menu-row">
+              <img src={Selector} style={{ visibility: SelectorVisibility3 }} />
+              <button 
+                onMouseEnter={handleMouseEnterS3} 
+                onMouseLeave={handleMouseLeaveS3}
+              >
+                Skills
+              </button>
+            </div>
+
+            <div className="menu-row">
+              <img src={Selector} style={{ visibility: SelectorVisibility4 }} />
+              <button 
+                onMouseEnter={handleMouseEnterS4} 
+                onMouseLeave={handleMouseLeaveS4}
+              >
+                About
+              </button>
+            </div>
+          </div>
+
+          </div>
+
+    <div className = "Text-Right"> 
+      <div className='column'>
+       <h1>Right Text</h1>
+    </div>
+    </div>
  
-  
-    <div className='Menu'>
-      <table>
-      <tr>
-      <th><img src={Selector}  style={{ visibility: SelectorVisibility1 }}/></th>
-      <th> <img src={Selector} style={{ visibility: SelectorVisibility2 }}/></th>
-      <th> <img src={Selector} style={{ visibility: SelectorVisibility3 }}/></th>
-      <th> <img src={Selector} style={{ visibility: SelectorVisibility4 }}/></th>
-      </tr>
-
-
-      
-
-      <tr>
-       <th> <button onMouseEnter={handleMouseEnterS1} onMouseLeave={handleMouseLeaveS1}> Continue </button></th>
-       <th> <button onMouseEnter={handleMouseEnterS2} onMouseLeave={handleMouseLeaveS2}> Character </button></th>
-       <th>  <button onMouseEnter={handleMouseEnterS3} onMouseLeave={handleMouseLeaveS3}> Skills </button></th>
-       <th>  <button onMouseEnter={handleMouseEnterS4} onMouseLeave={handleMouseLeaveS4}> About </button></th>
-      </tr>
-
-      </table>
     
     </div>
-
-    
     <Footer/>
- 
     </>
   )
 }

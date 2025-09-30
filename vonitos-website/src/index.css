@@ -3,11 +3,6 @@
   src: local('HomeVideo-BLG6G'), url(./fonts/HomeVideo-BLG6G.ttf) format('truetype');
 }
 
-*{
- margin: 0;
- padding: 0;
-}
-
 :root {
   font-family: HomeVideo, serif;
   line-height: 1.5;
@@ -69,6 +64,8 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
