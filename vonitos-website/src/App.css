@@ -14,10 +14,15 @@
     transform: translateX(20px);
   }
 }
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+@keyframes FadeIn {
+    0% {
+    transform: translateY(-8px);
   }
+  100% {
+    transform: translateY(8px);
+  }
+  
 }
 
 tr { display: block; float: left; }
@@ -70,6 +75,7 @@ th, td { display: block; }
   display: flex;
   align-items: center;          /* vertically center text */
   justify-content: center;      /* horizontally center text */
+  animation: FadeIn 1s infinite alternate;
 }
 
 /* Specific background images */

@@ -54,7 +54,8 @@ function App() {
     
     <div className = "Text-Left" style={{ visibility: SelectorVisibility3 }}> 
       <div className='column'>
-       <h1>Skills</h1>
+        <h2>Skill</h2>
+       <h5>I am great at sex</h5>
     </div>
     </div>
  
@@ -76,7 +77,9 @@ function App() {
                 onMouseEnter={handleMouseEnterS2} 
                 onMouseLeave={handleMouseLeaveS2}
               >
+
                 Character
+                
               </button>
             </div>
 
@@ -86,7 +89,9 @@ function App() {
                 onMouseEnter={handleMouseEnterS3} 
                 onMouseLeave={handleMouseLeaveS3}
               >
+
                 Skills
+
               </button>
             </div>
 
@@ -105,7 +110,8 @@ function App() {
 
     <div className = "Text-Right" style={{ visibility: SelectorVisibility2 }}> 
       <div className='column' >
-       <h1>Character</h1>
+       <h2>Character</h2>
+       <h5>I am great</h5>
        <></>
     </div>
     </div>
