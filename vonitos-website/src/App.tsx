@@ -52,9 +52,9 @@ function App() {
 
     <div className="row">
     
-    <div className = "Text-Left"> 
+    <div className = "Text-Left" style={{ visibility: SelectorVisibility3 }}> 
       <div className='column'>
-       <h1>Left Text</h1>
+       <h1>Skills</h1>
     </div>
     </div>
  
@@ -103,9 +103,10 @@ function App() {
 
           </div>
 
-    <div className = "Text-Right"> 
-      <div className='column'>
-       <h1>Right Text</h1>
+    <div className = "Text-Right" style={{ visibility: SelectorVisibility2 }}> 
+      <div className='column' >
+       <h1>Character</h1>
+       <></>
     </div>
     </div>
  
