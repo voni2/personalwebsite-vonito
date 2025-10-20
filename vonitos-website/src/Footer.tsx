@@ -1,7 +1,7 @@
 function Footer(){
     return(
         <footer>
-            <p>FOOTER</p>
+            <p>Created by: Von Gatchalian</p>
         </footer>
     )
 }

@@ -28,11 +28,6 @@
 tr { display: block; float: left; }
 th, td { display: block; }
 
-
-
-
-
-
 .Menu button{
   width: 20em;
   height: 5em;
@@ -74,20 +69,32 @@ th, td { display: block; }
   box-sizing: border-box;       /* prevent padding overflow */
   display: flex;
   align-items: center;          /* vertically center text */
-  justify-content: center;      /* horizontally center text */
   animation: FadeIn 1s infinite alternate;
 }
 
 /* Specific background images */
 .Text-Right {
   background-image: url("./assets/Text-Scroll-Background.png");
+  color: black;
 }
 
 .Text-Left {
+  flex-direction: column; /* stack text properly */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* center vertically */
+  text-align: center;     /* center text lines */
+
   background-image: url("./assets/Text-Scroll-Background.png");
-  /* or keep background-color if you want it plain */
-  /* background-color: white; */
+    color: black;
 }
+
+.Text-Left ul{
+  text-align: left;
+}
+
+
+
+
 
 .Menu {
   display: flex;

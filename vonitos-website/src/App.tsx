@@ -3,6 +3,12 @@ import Header from './Header'
 import './App.css'
 import Footer from './Footer'
 import Selector from './assets/Hover-Selector.png'
+import JavaLogo from './assets/java.png'
+import ReactLogo from './assets/react.png'
+import HtmlLogo from './assets/html.png'
+import CssLogo from './assets/css.png'
+import GitLogo from './assets/git.png'
+
 
 function App() {
   /*Handles the Visibility of the Selector Gauntlet 1 when you hover over it */
@@ -54,8 +60,20 @@ function App() {
     
     <div className = "Text-Left" style={{ visibility: SelectorVisibility3 }}> 
       <div className='column'>
-        <h2>Skill</h2>
-       <h5>I am great at sex</h5>
+        <div className='Skills'>
+        <h2>Skills</h2>
+        
+      <img src={JavaLogo} alt="Java"  width="75" height="100"  />
+ 
+      <img src={ReactLogo} alt="React"  width="75" height="100" />
+ 
+      <img src={HtmlLogo} alt="HTML"  width="75" height="100"  />
+    
+      <img src={CssLogo} alt="CSS"  width="75" height="100" />
+  
+      <img src={GitLogo} alt="Git" width="75" height="100" />
+    
+    </div>
     </div>
     </div>
  
@@ -63,12 +81,15 @@ function App() {
       <div className="Menu">
             <div className="menu-row">
               <img src={Selector} style={{ visibility: SelectorVisibility1 }} />
+                <a href="https://www.linkedin.com/in/von-gottfried-gatchalian-6a5878342/">
               <button 
                 onMouseEnter={handleMouseEnterS1} 
                 onMouseLeave={handleMouseLeaveS1}
+  
               >
                 Continue
               </button>
+             </a>
             </div>
 
             <div className="menu-row">
@@ -97,12 +118,14 @@ function App() {
 
             <div className="menu-row">
               <img src={Selector} style={{ visibility: SelectorVisibility4 }} />
+              <a href='https://sites.google.com/view/vgngatchalian/home'>
               <button 
                 onMouseEnter={handleMouseEnterS4} 
                 onMouseLeave={handleMouseLeaveS4}
               >
                 About
               </button>
+              </a>
             </div>
           </div>
 
@@ -111,7 +134,8 @@ function App() {
     <div className = "Text-Right" style={{ visibility: SelectorVisibility2 }}> 
       <div className='column' >
        <h2>Character</h2>
-       <h5>I am great</h5>
+       <h5>Hi, I'm Von Gottfried N. Gatchalian, a graduate from MAPUA. I aspire to be a Software Engineer and a Business Owner within the Tech Industry. I pursued Information Technology (IT) at Mapua University. He is proficient in Java, React, and SQL.
+      </h5>
        <></>
     </div>
     </div>
